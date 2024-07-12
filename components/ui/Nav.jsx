@@ -1,5 +1,4 @@
 "use client"
-import { Header } from '@/components/ui/Header';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

@@ -1,11 +1,13 @@
-import {FaGithub , FaLinkedinIn, FaYoutube,FaTwitter} from "react-icons/fa";
+import {FaGithub , FaLinkedinIn} from "react-icons/fa";
+import { SiLeetcode , SiGmail } from "react-icons/si";
+
 import Link from "next/link";
 
 const social = [
   {icon : <FaGithub />, path: 'https://github.com/Harshitm14'},
   {icon : <FaLinkedinIn />, path: 'https://www.linkedin.com/in/harshit-mania-720bbb236/'},
-  {icon : <FaYoutube />, path: ''},
-  {icon : <FaTwitter />, path: ''},
+  {icon : <SiLeetcode />, path: 'https://leetcode.com/u/HarshitMania/'},
+  {icon : <SiGmail />, path: 'mailto:harshitmaniawork@gmail.com'},
 
 
 ];
