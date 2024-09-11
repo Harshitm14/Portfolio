@@ -16,8 +16,7 @@ const Home = () => {
           Hello I'm <br /><span className="text-accent">Harshit Mania</span> 
           </h1>
           <p className="max-w-[500px] mb-9 text-white/80"><br />
-          I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
-          </p>
+          I'm a final-year B.Tech student with a passion for programming and web development. I enjoy creating innovative solutions and have gained valuable experience through various projects and hackathons.          </p>
           {/*btn and socials */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
             <a href="/Resume_Campus.pdf" download >

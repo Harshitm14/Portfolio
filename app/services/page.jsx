@@ -5,31 +5,52 @@ import {BsArrowDownRight} from 'react-icons/bs';
 const services = [
   {
     num:'01',
-    title: 'Web Development',
+    title: 'Front-End Development',
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, asperiores! Asperiores distinctio totam quis consectetur at soluta qui, doloremque reprehenderit eaque, architecto nulla cumque vitae, maxime pariatur nesciunt esse repellendus!",
-    href: ""
+    [
+      <li>Proficient in HTML, CSS, Tailwind CSS, and JavaScript.
+</li>,
+      <li>Experience with frameworks like ReactJS and back-end technologies such as NodeJS.
+</li>,
+      <li>Skilled in integrating third-party APIs and ensuring cross-browser compatibility.
+</li>
+    ],
+    href: "https://decisionhub-u8tx.onrender.com/"
   },
   {
     num:'02',
-    title: 'UI/UX Design',
+    title: 'Full Stack Development',
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, asperiores! Asperiores distinctio totam quis consectetur at soluta qui, doloremque reprehenderit eaque, architecto nulla cumque vitae, maxime pariatur nesciunt esse repellendus!",
-    href: ""
+    [
+      <li>Competent in both front-end and back-end technologies.
+</li>,
+      <li>Familiar with MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS) for creating dynamic, scalable web applications.</li>,
+      <li>Experience in developing and deploying full-stack projects </li>
+    ],
+    href: "https://price-watch-xi.vercel.app/"
   },
   {
     num:'03',
-    title: 'Logo Design',
+    title: 'Machine Learning and Data Science',
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, asperiores! Asperiores distinctio totam quis consectetur at soluta qui, doloremque reprehenderit eaque, architecto nulla cumque vitae, maxime pariatur nesciunt esse repellendus!",
-    href: ""
+    [
+      <li>Proficient in HTML, CSS, Tailwind CSS, and JavaScript.</li>,
+      <li>Experience with frameworks like ReactJS and back-end technologies such as NodeJS.</li>,
+      <li>Skilled in integrating third-party APIs and ensuring cross-browser compatibility.
+</li>
+    ],
+    href: "https://predictbay-v1.onrender.com/"
   },
   {
     num:'04',
-    title: 'SEO',
+    title: 'Version Control and Collaboration',
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, asperiores! Asperiores distinctio totam quis consectetur at soluta qui, doloremque reprehenderit eaque, architecto nulla cumque vitae, maxime pariatur nesciunt esse repellendus!",
-    href: ""
+    [
+      <li>Proficient in using Git and GitHub for version control, enabling efficient team collaboration and project management.</li>,
+      <li>Experience working in teams to deliver high-quality, scalable solutions in a timely manner.
+</li>
+    ],
+    href: "https://github.com/Harshitm14"
   },
 ];
 
@@ -60,7 +81,7 @@ const Services = () => {
         {/*top */}
         <div className='w-full flex justify-between items-center'>
           <div className='text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500'>{service.num}</div>
-          <Link href={service.href} className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45'>
+          <Link href={service.href} target="_blank" className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45'>
             <BsArrowDownRight className="text-primary text-3xl" />
           </Link>
         </div>

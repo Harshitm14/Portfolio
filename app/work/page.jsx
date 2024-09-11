@@ -19,34 +19,34 @@ import WorkSliderBtns from '@/components/ui/WorkSliderBtns';
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "PriceWatch",
     title: 'project 1',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil possimus harum maxime. Commodi, consequuntur beatae ipsum voluptatem voluptate ipsa error architecto numquam consequatur aut dicta, esse mollitia, minus alias?",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: '/assets/work/thumb1.png',
-    live: "",
-    github: "",
+    description: "PriceWatch is a web application designed to track Amazon product prices and provide real-time updates on price changes and stock availability. It features automated email alerts for price drops and stock notifications, enhancing user engagement. The platform uses web scraping to gather and display detailed product information, including images, descriptions, lowest, highest, average, and current prices. By offering timely notifications, PriceWatch helps users make informed purchasing decisions, making it a valuable tool for savvy shoppers.",
+    stack: [{ name: "NextJS" }, { name: "MongoDB" }, { name: "Tailwind CSS" } , { name: "Cheerio" } , { name: "BrightData" } , { name: "Nodemailer" }],
+    image: '/assets/work/Pricewatch.png',
+    live: "https://price-watch-xi.vercel.app/",
+    github: "https://github.com/Harshitm14/PriceWatch",
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "PredictBay",
     title: 'project 2',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil possimus harum maxime. Commodi, consequuntur beatae ipsum voluptatem voluptate ipsa error architecto numquam consequatur aut dicta, esse mollitia, minus alias?",
-    stack: [{ name: "Next JS" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: '/assets/work/thumb2.png',
-    live: "",
-    github: "",
+    description: "PredictBay is a predictive analytics project focused on delivering actionable insights for business forecasting. Utilizing advanced machine learning algorithms, it analyzes historical data to predict future trends and outcomes. The project incorporates data preprocessing, feature engineering, and model training to enhance prediction accuracy. Through a user-friendly interface, users can interact with predictive models and visualize results, making it a valuable tool for strategic decision-making and risk management in various business scenarios.",
+    stack: [{ name: "Python" }, { name: "Flask" }, { name: "HTML" }, { name: "CSS" }, { name: "Javascript" }],
+    image: '/assets/work/predictbayimg.png',
+    live: "https://predictbay-v1.onrender.com/",
+    github: "https://github.com/deepraj21/Predictbay",
   },
-  {
-    num: "03",
-    category: "frontend",
-    title: 'project 1',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil possimus harum maxime. Commodi, consequuntur beatae ipsum voluptatem voluptate ipsa error architecto numquam consequatur aut dicta, esse mollitia, minus alias?",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: '/assets/work/thumb3.png',
-    live: "",
-    github: "",
-  },
+  // {
+  //   num: "03",
+  //   category: "DecisionHub",
+  //   title: 'project 3',
+  //   description: "DecisionHub is an intuitive platform designed to streamline decision-making processes through advanced natural language processing. It allows business analysts to create and manage decision strategies using English-like rule writing, eliminating the need for complex coding. The tool supports real-time, drag-and-drop rule modifications and features live debugging for swift error resolution. DecisionHub enhances agility in strategy adaptation and simplifies complex decision frameworks, making it an essential asset for effective business strategy management.",
+  //   stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, { name: "Flask" }, { name: "Python" }],
+  //   image: '/assets/work/thumb3.png',
+  //   live: "decisionhub-u8tx.onrender.com/",
+  //   github: "https://github.com/deepraj21/DecisionHub",
+  // },
 ];
 
 const Work = () => {
@@ -81,7 +81,7 @@ const Work = () => {
               {/* project desc */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className='flex gap-4'>
+              <ul className='flex flex-wrap gap-4'>
                 {project.stack.map((item, index) => (
                   <li key={index} className='text-xl text-accent'>
                     {item.name}
@@ -108,7 +108,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href = {project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -130,7 +130,7 @@ const Work = () => {
               className='xl:h-[520px] mb-12'
               onSlideChange={handleSlideChange}
               modules={[Autoplay]}
-              autoplay={{delay: 5000 , disableOnInteraction: false}}
+              autoplay={{delay: 10000 , disableOnInteraction: true}}
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className='w-full'>
@@ -138,11 +138,11 @@ const Work = () => {
                     {/* overlay */}
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     {/* image */}
-                    <div className='relative w-full h-full'>
+                    <div className='relative w-full h-full overflow-hidden'>
                       <Image
                         src={project.image}
                         fill
-                        className='object-cover'
+                        className='object-coveer'
                         alt=''
                       />
                     </div>

@@ -23,7 +23,9 @@ import {
 // about data map
 const about = {
   title: 'About Me',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, obcaecati distinctio non laudantium minima a quisquam illum accusantium necessitatibus voluptatibus architecto labore aspernatur beatae repudiandae aliquid adipisci ab eligendi magnam.",
+  description: `I am a final-year B.Tech student at KIIT University, specializing in Computer Science with a strong foundation in web development and programming. I have hands-on experience with technologies like HTML, CSS, JavaScript, and ReactJS, alongside frameworks like Tailwind CSS and NodeJS. Along with that, I also have experience with databases and query languages such as MongoDB and SQL. Passionate about building efficient, user-focused applications, I have developed projects like PriceWatch, a product-tracking tool, and PredictBay, a stock prediction platform. My achievements include being a national finalist in Solving for India by GeeksforGeeks and participating in Flipkart Grid. I am eager to collaborate with innovative teams and contribute to impactful projects.
+  \n\n
+Let's connect!`,
   info: [
     {
       fieldName: "Name",
@@ -53,25 +55,21 @@ const about = {
       fieldName: "Languages",
       fieldValue: "English, Hindi, Odia",
     },
-  ]
+  ],
 };
 
 // experience data map
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui doloribus, pariatur, sapiente modi quae totam hic obcaecati odio quia eligendi nihil asperiores ipsam illo, consectetur omnis voluptate ex soluta.",
+  description: "I completed a web development internship at CodeClause, where I developed responsive, cross-browser compatible web pages using front-end frameworks. I also integrated third-party APIs to enhance functionality and user experience. This internship honed my ability to meet deadlines and work independently on complex projects.",
   items: [
     {
       company: "CodeClause",
       position: "Full Stack Developer",
       duration: "2022 - Present",
     },
-    {
-      company: "CodeClause",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
+    
   ]
 };
 
@@ -79,7 +77,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui doloribus, pariatur, sapiente modi quae totam hic obcaecati odio quia eligendi nihil asperiores ipsam illo, consectetur omnis voluptate ex soluta.",
+  description: "I am pursuing a B.Tech in Computer Science at KIIT University, Bhubaneswar, with a current GPA of 8.62, expected to graduate in July 2025. My academic foundation is complemented by practical experience in web development and participation in national-level tech competitions.",
   items: [
     {
       institution: "Kalinga Institute of Industrial Technology",
@@ -102,7 +100,7 @@ const education = {
 // skills data map
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi molestias architecto quisquam labore sit, at quae laboriosam nam libero cupiditate facere aut, nostrum perferendis dolores nihil tempore culpa reiciendis.",
+  description: "Proficient in C, C++, HTML, CSS, Tailwind CSS, Git, and GitHub, with familiarity in Java, JavaScript, Python, ReactJS, MongoDB, NodeJS, and SQL. I excel at building responsive, user-friendly web applications and have experience working with APIs, web scraping, and deep learning models.",
   skillList: [
     {
       icon: <FaHtml5 />,
