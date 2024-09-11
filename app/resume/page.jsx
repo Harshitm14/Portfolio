@@ -66,8 +66,8 @@ const experience = {
   items: [
     {
       company: "CodeClause",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      position: "Web Development Intern",
+      duration: "May 2023 - June 2023",
     },
     
   ]
